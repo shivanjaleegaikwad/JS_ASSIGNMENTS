@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+    <head>
+        <Title> Javascript_1</Title>
+    </head>
+<body>
+
+<script>
+const a= prompt ('Enter Numbers');
+console.log(a);
+function count()
+{
+let letter_count =0;
+let d=[1,2,3,4,5,6,7,8];
+for ( let position = 1; position <=8 ;position++)
+{ 
+letter_count=0;
+for (j=0; j<a.length ; j++)
+{
+if (position== a.charAt(j))
+{
+letter_count +=1;
+}
+}
+let t=position;
+t=t-1;
+document.write(`${d[t]} : ${letter_count} `);
+document.write("<br><br>");
+}
+}
+count();
+
+</script>
+</body>
+</html>

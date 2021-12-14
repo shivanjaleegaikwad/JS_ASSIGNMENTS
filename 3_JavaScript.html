@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <title>windows</title>
+    </head>  
+
+<body>
+    <form>
+        <input type=button value="open windows" onclick="open_win()">
+        <input type=button value="close windows" onclick="close_win()">     
+    </form>
+</body>
+    
+<script type="text/javascript">
+    function open_win()
+    {
+        myWindow1 = window.open("https://facebook.com", "myWindow1", "width=700 height=500");
+        myWindow2 = window.open("https://facebook.com", "myWindow2", "width=700 height=500");
+        myWindow3 = window.open("https://facebook.com", "myWindow3", "width=700 height=500");
+        myWindow4 = window.open("https://facebook.com", "myWindow4", "width=700 height=500");
+        myWindow5 = window.open("https://facebook.com", "myWindow5", "width=700 height=500")
+    }
+    function close_win()
+    {
+    setTimeout(function(){ myWindow1.close() },5000);
+    setTimeout(function(){ myWindow2.close() },10000);
+    setTimeout(function(){ myWindow3.close() },15000);
+    setTimeout(function(){ myWindow4.close() },20000);
+    setTimeout(function(){ myWindow5.close() },25000);
+    }
+</script>
+</html>
